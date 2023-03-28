@@ -1,0 +1,12 @@
+# Submission interval in minutes
+# Set to -1 if there is no limit
+submissions_interval: -1
+
+# Total number of submission per submissions interval
+# Set to -1 if there is no limit
+total_submissions_limit: -1
+
+# Below list is used to grant more submissions to staff/students
+# If the student id is in the list total_submissions_limit 
+# will be overwritten by the number after semicolon
+# exceptions: # email shown at gradescope without @school.edu

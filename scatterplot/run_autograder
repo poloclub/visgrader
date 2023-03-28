@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+# Delete sample submission files
+rm -rf /autograder/source/submission/
+rm -rf /autograder/solution/lib/
+rm -rf /autograder/solution/cars.json
+rm -rf /autograder/solution/solution_plot.png
+
+mkdir /autograder/source/submission/
+
+# copy d3 lib to submission directory
+mkdir /autograder/source/submission/lib
+mkdir /autograder/source/solution/lib
+
+# Move all of the student files to grader directory
+cp  -r /autograder/submission/* /autograder/source/submission/
+
+# data
+cp  -r  /autograder/source/data/* /autograder/source/submission/
+cp  -r  /autograder/source/data/* /autograder/source/solution/
+
+##  d3 lib
+cp  -r /autograder/source/lib/* /autograder/source/submission/lib/
+cp  -r /autograder/source/lib/* /autograder/source/solution/lib/
+
+MYPORT=8080;
+
+cd /autograder/source/solution/
+echo "taking screenshot of solution"
+python3 -m http.server $MYPORT &
+python3.7 /autograder/source/utils/screenshot.py
+kill -9 `ps -ef |grep http.server |grep $MYPORT |awk '{print $2}'`
+
+
+cd /autograder/source/submission/
+
+echo "starting local server"
+python3 -m http.server $MYPORT &
+
+# delete any old screenshots
+rm -f plot.png
+
+cd /autograder/source/
+
+python3.7 run_tests.py
+
+cd /autograder/source/submission/
+echo "all done - shutting down server"
+kill -9 `ps -ef |grep http.server |grep $MYPORT |awk '{print $2}'`

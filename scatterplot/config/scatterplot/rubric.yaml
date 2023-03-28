@@ -1,0 +1,12 @@
+# Required elements ids for submission document
+elements:
+    svg: ["container"]
+    g: ["plot", "symbols", "x_axis","y_axis"]
+    text: ["x_axis_label","y_axis_label","title"]
+labels:
+    x_axis_label: "Horsepower"
+    y_axis_label: "Miles Per Gallon"
+    title: "Vehicle MPG by Horsepower"
+data:
+    x_ticks: [0,20,40,60,80,100,120,140,160,180,200,220]
+    y_ticks: [0,5,10,15,20,25,30,35,40,45]

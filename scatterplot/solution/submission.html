@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">    
+    <title>Visual Encoding Positioning</title>
+    <style>
+        text {
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+        text#x_axis_label, text#y_axis_label {
+            font-size: 15px;
+        }
+        text#title{
+            font-size: 20px;
+        }
+        svg {
+            overflow: visible;
+        }
+    </style>
+    <script type="text/javascript" src="lib/d3/d3.min.js"></script>
+    <script type="text/javascript" src="lib/d3-dsv/d3-dsv.min.js"></script>
+</head>   
+<body>
+    <script>
+        var margin = { top: 40, right: 30, bottom: 30, left: 60  },
+        width = 800 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+        var x = d3.scaleLinear()
+            .range([0, width]);
+
+        var y = d3.scaleLinear()
+            .range([height, 0]);            
+
+        var svg = d3.select("body")
+            .append("svg")
+            .attr("id", "container")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.bottom + margin.top);
+        
+        var plot = svg.append("g")
+            .attr("id","plot")
+            .attr("transform", "translate("+margin.left+","+margin.top+")");
+
+        svg.append("text")
+            .attr("id", "title")
+            .attr("transform",
+                "translate(" + ((width + margin.left + margin.right) / 2) + " ," + (margin.top / 2) + ")")            
+            .style("text-anchor", "middle")                
+            .text("Vehicle MPG by Horsepower")
+    
+        svg.append("text")
+            .attr("id", "x_axis_label")
+            .attr("transform",
+                "translate(" + (width / 2) + " ," + (height + (margin.top * 2)) + ")")
+            .text("Horsepower");
+
+        svg.append("text")
+            .attr("id", "y_axis_label")
+            .attr("transform", "rotate(-90)")
+            .attr("x", 0 - (height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text("Miles Per Gallon");            
+            
+        var symbols = plot.append("g")
+            .attr("id","symbols");
+        
+        d3.dsv(",", "data/cars.csv", function(d){
+            // filter out items w/ missing HP or MPG
+            if ((d.Horsepower !== '') && (d.Miles_per_Gallon !== '')) {
+                return {
+                    name: d.Name,
+                    x: +d.Horsepower,
+                    y: +d.Miles_per_Gallon
+                }
+            }            
+        }).then(function(data){
+            x.domain([0, d3.max(data, function (d) { return d.x; })]);
+            y.domain([0, d3.max(data, function (d) { return d.y; })]);
+            
+            var x_axis = plot.append("g")
+                .attr("id", "x_axis")
+                .attr("class", "axis")
+                .attr("transform", "translate(0," + height + ")")            
+                .call(d3.axisBottom(x));
+    
+            var y_axis = plot.append("g")
+                .attr("id", "y_axis")
+                .attr("class", "axis")
+                .call(d3.axisLeft(y));
+
+            symbols.selectAll('circle')
+                .data(data)
+                .enter()
+                .append('circle')
+                .attr('cx', d => x(d.x))
+                .attr('cy', d => y(d.y))
+                .attr('fill', 'rgb(100,100,255)')
+                .attr('r', 3)
+                .on("mouseover",handleMouseOver)
+                .on("mouseout", handleMouseOut);
+        })
+
+        function handleMouseOver(){
+            d3.select(this).classed("mouseover", true).attr("r", 7);
+        }
+        
+        function handleMouseOut(){
+            d3.select(this).classed("mouseover", false).attr("r", 3)
+        }        
+
+    </script>
+</body>

@@ -1,0 +1,17 @@
+
+# Useful gradescope wrappers
+gradescope-utils>=0.2.7
+
+# Grader requirements
+pyyaml
+dropbox
+
+# Scatterplot requirements
+requests==2.24.0
+beautifulsoup4>=4.9.3
+selenium
+scikit-image
+pandas
+numpy
+matplotlib
+autograde-viz

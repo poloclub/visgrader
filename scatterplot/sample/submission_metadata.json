@@ -1,0 +1,36 @@
+{
+   "assignment_id":null,
+   "assignment":{
+      "due_date":"2019-08-28T13:00:00.000000-07:00",
+      "group_size":null,
+      "title":"Scatterplot",
+      "group_submission":false,
+      "release_date":"2019-08-15T13:00:00.000000-07:00",
+      "outline":[
+         {
+            "index":1,
+            "weight":"100.0",
+            "title":"Autograder",
+            "content":[
+
+            ],
+            "parent_id":null,
+            "type":"ProgrammingQuestion",
+            "id":2066206
+         }
+      ],
+      "total_points":"100.0",
+      "id":228415,
+      "late_due_date":null
+   },
+   "created_at":"2020-11-18T14:20:00.000000+01:00",
+   "users":[
+      {
+         "email":"mksmsrkn@gmail.com",
+         "sid":"999999999",
+         "id":1170976,
+         "name":"Maksim Sorokin (Test Student)"
+      }
+   ],
+   "previous_submissions":[]
+}

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# use this to run the test suite locally.  See Readme for getting local screenshots uploaded top dropbox.
+
+MYPORT=8080;
+
+cd solution /
+echo "taking screenshot of solution"
+python -m http.server $MYPORT &
+cd ../
+python utils/screenshot.py
+kill -9 `ps -ef |grep http.server |grep $MYPORT |awk '{print $2}'`
+
+cd submission/
+echo "starting local server"
+python -m http.server $MYPORT &
+
+# delete old screenshots,
+rm -f plot.png
+
+cd ../
+
+echo "starting tests"
+python run_tests.py
+
+echo "all done - shutting down server"
+kill -9 `ps -ef |grep http.server |grep $MYPORT |awk '{print $2}'`

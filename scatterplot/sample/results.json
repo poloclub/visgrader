@@ -1,0 +1,117 @@
+{
+    "output": "Submission 1 out of -1 during -1 minute interval\n Could not get shared link for plot screenshot. This submission already has a screenshot shared from a previous gradescope run.",
+    "tests": [
+        {
+            "name": "Functional Advisory Test - presence of required elements.",
+            "score": 0.0,
+            "max_score": 0.0,
+            "output": "expected: {'svg': ['container'], 'g': ['plot', 'symbols', 'x_axis', 'y_axis'], 'text': ['x_axis_label', 'y_axis_label', 'title']}. \n Found: , <svg id='container'>\n, <g id='plot'>\n, <g id='symbols'>\n, <g id='x_axis'>\n, <g id='y_axis'>\n, <text id='x_axis_label'>\n, <text id='y_axis_label'>\n, <text id='title'>\n\n"
+        },
+        {
+            "name": "Functional Advisory Test - Plot Information",
+            "score": 0.0,
+            "max_score": 0.0,
+            "output": "The autograder has found the following layout/size specification: \n\n            <svg> dimensions width: 800 height: 500 \n\n            container <g> transform / translation x: 60.0 y: 40.0 \n\n            x-axis <path class='domain'> width: 710 \n\n            y-axis <path class='domain'> height: 430 \n            _________________________________________________________\n\n            Auto-grading assumptions: \n            The following values are assumed for evaluating scales and element scaling / positioning: \n\n            Inner chart dimensions: \n\n            innert chart width: 710 (x-axis <path class='domain'> width) \n\n            inenrt chart height: 430 (y-axis <path class='domain'> height) \n\n            margin + padding left: 60.0 (container <g> transform x) \n\n            margin + padding right: 30.0 (<svg> width - margin.left - padding.left - inner chart width) \n\n            margin + padding top: 40.0 (container <g> transform y) \n\n            margin + padding bottom: 30.0 (<svg> width - margin.top - padding.top - inner chart height) \n\n            x-axis range: 0-710 \n\n            y-axis range: 430-0 \n\n\n"
+        },
+        {
+            "name": "test_2_duplicate_ids (test_contents_layout.TestFiles)",
+            "score": 0.0,
+            "max_score": 0.0,
+            "output": "Found 0 duplicate(s): []\n"
+        },
+        {
+            "name": "Functional advisory test - determine if the d3 lib imports are correct.",
+            "score": 0.0,
+            "max_score": 0.0,
+            "output": "Found all required d3 imports.\n"
+        },
+        {
+            "name": "Test that there is one mark present for each required data point in the dataset.",
+            "score": 0.0,
+            "max_score": 0.0,
+            "output": "Found 392 plotted marks\n"
+        },
+        {
+            "name": "Test that the circle marks are positioned correctly",
+            "score": 2.0,
+            "max_score": 2.0,
+            "output": "Circle marks are positioned correctly \n"
+        },
+        {
+            "name": "Test that the circle mark radius becomes larger on mouseover interaction",
+            "score": 2.5,
+            "max_score": 2.5,
+            "output": "Correct implementation - circle mark radius is larger on mouseover.\n"
+        },
+        {
+            "name": "Test that the circle mark radius becomes smaller on mouseout event",
+            "score": 2.5,
+            "max_score": 2.5,
+            "output": "Correct implementation - circle mark radius becomes smaller on mouseout.\n"
+        },
+        {
+            "name": "Test for presence of the x-axis and tick values-",
+            "score": 1.5,
+            "max_score": 1.5,
+            "output": "Found 12 tick values for the x-axis\n"
+        },
+        {
+            "name": "Test for presence of the y-axis and tick values-",
+            "score": 1.5,
+            "max_score": 1.5,
+            "output": "Found 10 tick values for the y-axis\n"
+        },
+        {
+            "name": "Test for the correct x-axis label",
+            "score": 1.0,
+            "max_score": 1.0,
+            "output": "Found x-axis label: 'Horsepower'\n"
+        },
+        {
+            "name": "Test for the correct y-axis label",
+            "score": 0.5,
+            "max_score": 0.5,
+            "output": "Found y-axis label: 'Miles Per Gallon'\n"
+        },
+        {
+            "name": "Test the y-axis label orientation",
+            "score": 0.5,
+            "max_score": 0.5
+        },
+        {
+            "name": "Testing the y-scale tick values",
+            "score": 0.75,
+            "max_score": 0.75,
+            "output": "Found y-axis values [0,5,...,45].\n"
+        },
+        {
+            "name": "Testing for a left-oriented axis",
+            "score": 0.25,
+            "max_score": 0.25,
+            "output": "y-axis is likely left-oriented.\n"
+        },
+        {
+            "name": "Testing the x-scale tick values",
+            "score": 2.75,
+            "max_score": 2.75,
+            "output": "Found y-axis values \n[  0  20  40  60  80 100 120 140 160 180 200 220].\n"
+        },
+        {
+            "name": "Testing for a bottom-oriented x-axis",
+            "score": 0.25,
+            "max_score": 0.25,
+            "output": "x-axis is likely bottom-oriented.\n"
+        },
+        {
+            "name": "Test for the title displayed above barplot",
+            "score": 0.5,
+            "max_score": 0.5,
+            "output": "Found chart title: Vehicle MPG by Horsepower\n"
+        }
+    ],
+    "leaderboard": [],
+    "visibility": "visible",
+    "stdout_visibility": "hidden",
+    "execution_time": "16.37",
+    "score": 16.5
+}
