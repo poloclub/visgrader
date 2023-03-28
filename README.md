@@ -2,7 +2,11 @@
 
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 [![arXiv](https://img.shields.io/badge/arXiv-2110.11227-b3131b.svg)](https://arxiv.org/abs/2110.11227)
-![crown_jewel](https://user-images.githubusercontent.com/683979/228333301-93f9c889-3687-4813-b29e-73cba408596f.png)
+
+
+| ![crown_jewel](https://user-images.githubusercontent.com/683979/228333301-93f9c889-3687-4813-b29e-73cba408596f.png) |
+| --- |
+
 ### Automatic Grading of D3 Visualizations
 
 # Development
