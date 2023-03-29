@@ -35,7 +35,7 @@ Then navigate to `http://localhost:3000/submision.html`
 Led by [Matthew Hull](https://matthewdhull.github.io), VisGrader is a result of a collaboration between the [Polo Club of Data Science](https://poloclub.github.io) and Teaching Assistants from [CSE 6242 Data and Visual Analytics](https://poloclub.github.io/#cse6242) at Georgia Tech. VisGrader has been created by [Matthew Hull](https://matthewdhull.github.io), Vivian Pednekar, Hannah Murray, Nimisha Roy, Emmanuel Tung, Susanta Routray, Connor Guerin, Justin Chen, [Zijie J. Wang](https://zijie.wang), [Seongmin Lee](https://ligi214.github.io), [Mahdi Roozbahani](https://mahdi-roozbahani.github.io), and [Duen Horng Chau](https://poloclub.github.io/polochau/).
 
 # Citation
-To learn more about VisGrader, please read our [poster paper](https://arxiv.org/abs/2110.11227) / [poster](https://poloclub.github.io/papers/21-vis-autograde-poster.pdf) (published at IEEE VIS 2021).  If you find VisGrader useful for your research, please consider citing our paper.  Thanks!
+To learn more about VisGrader, please read our preliminary two-page [poster paper](https://arxiv.org/abs/2110.11227) and [poster](https://poloclub.github.io/papers/21-vis-autograde-poster.pdf) presented at IEEE VIS 2021. Thanks!
 
 ```latex
 @inproceedings{hull2021autogradeviz,
