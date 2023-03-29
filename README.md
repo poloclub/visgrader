@@ -36,11 +36,11 @@ Led by [Matthew Hull](https://matthewdhull.github.io), VisGrader is a result of 
 
 # Citation
 To learn more about VisGrader, please read our [poster paper](https://arxiv.org/abs/2110.11227) / [poster](https://poloclub.github.io/papers/21-vis-autograde-poster.pdf) (published at IEEE VIS 2021).  If you find VisGrader useful for your research, please consider citing our paper.  Thanks!
-```
+
+```latex
 @inproceedings{hull2021autogradeviz,
       title={Towards Automatic Grading of D3.js Visualizations},
       author={Matthew Hull, Connor Guerin, Justin Chen, Susanta Routray, Duen Horng (Polo) Chau},
       booktitle = {IEEE Visualization Conference (VIS), Poster},
-      year={2021},
-}
+      year={2021}}
 ```
