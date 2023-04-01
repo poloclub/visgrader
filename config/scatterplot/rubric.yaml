@@ -1,4 +1,5 @@
-# Required elements ids for submission document
+# This rubric contains required DOM elements (VisGrader Sec 6.3)
+# and some axis comparison data
 elements:
     svg: ["container"]
     g: ["plot", "symbols", "x_axis","y_axis"]

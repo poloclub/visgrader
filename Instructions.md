@@ -39,4 +39,3 @@ run `./local_run_autograder`
 - `data/` contains `cars.json` copied into `submission/` folder during grading.
 - `lib/` contains all `d3` libraries that are copied into `submission/` folder during grading
 - `utils/` contains `selenium` drivers for chrome and firefox for local testing
-- `utils/embedded_d3.py` is a wrapper class to represent elements of the `d3` barplot.

@@ -1,3 +1,9 @@
+"""
+Entry point for running a VisGrader auto-grader testing suite over submission
+Can be modified to upload a submission to dropbox if deployed on Gradescope
+See instructions for running the auto-grader in the README
+"""
+
 import os
 import sys
 import json

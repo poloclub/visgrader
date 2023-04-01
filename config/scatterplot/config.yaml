@@ -1,3 +1,4 @@
+# This config file is used for Gradescope submission limits
 # Submission interval in minutes
 # Set to -1 if there is no limit
 submissions_interval: -1

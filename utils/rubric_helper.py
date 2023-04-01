@@ -1,3 +1,6 @@
+"""
+Util to load rubric files
+"""
 import yaml
 
 def get_rubric_config(config_filepath):

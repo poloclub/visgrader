@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# used when running on Gradescope
+# for local run, see README and local_run_autograder.sh
 
 # Delete sample submission files
 rm -rf /autograder/source/submission/

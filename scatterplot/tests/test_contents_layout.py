@@ -1,3 +1,8 @@
+"""
+This set of unit tests provides advisory information
+on visualization layout detected by the autograder (VisGrader Sec. 5.3.2)
+"""
+
 import os
 import unittest
 import re

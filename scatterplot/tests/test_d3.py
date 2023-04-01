@@ -1,3 +1,7 @@
+"""
+Main unit tests designed to cover assignment rubric items
+e.g., marks, scaling, axes, interaction, etc.
+"""
 import os
 import unittest
 import re
