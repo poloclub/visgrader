@@ -1,8 +1,7 @@
 # VisGrader: Automatic Grading of D3 Visualizations
 
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-[![arXiv](https://img.shields.io/badge/arXiv-2110.11227-b3131b.svg)](https://arxiv.org/abs/2110.11227)
-
+[![arXiv](https://img.shields.io/badge/arXiv-2310.12347-b3131b.svg)](https://arxiv.org/abs/2310.12347)
 
 | ![crown_jewel](https://user-images.githubusercontent.com/683979/228333301-93f9c889-3687-4813-b29e-73cba408596f.png) |
 | --- |
@@ -35,15 +34,15 @@ Then navigate to `http://localhost:3000/submision.html`
 Led by [Matthew Hull](https://matthewdhull.github.io), VisGrader is a result of a collaboration between the [Polo Club of Data Science](https://poloclub.github.io) and Teaching Assistants from [CSE 6242 Data and Visual Analytics](https://poloclub.github.io/#cse6242) at Georgia Tech. VisGrader has been created by [Matthew Hull](https://matthewdhull.github.io), Vivian Pednekar, Hannah Murray, Nimisha Roy, Emmanuel Tung, Susanta Routray, Connor Guerin, Justin Chen, [Zijie J. Wang](https://zijie.wang), [Seongmin Lee](https://ligi214.github.io), [Mahdi Roozbahani](https://mahdi-roozbahani.github.io), and [Duen Horng Chau](https://poloclub.github.io/polochau/).
 
 # Citation
-To learn more about VisGrader, please read our paper, presented at IEEE VIS 2023:
+To learn more about VisGrader, please read our [paper](https://arxiv.org/pdf/2310.12347.pdf), presented at IEEE VIS 2023:
 ```latex
-@ARTICLE{hull2023visgrader,
+@article{hull2023visgrader,
   author={Hull, Matthew and Pednekar, Vivian and Murray, Hannah and Roy, Nimisha and Tung, Emmanuel and Routray, Susanta and Guerin, Connor and Chen, Justin and Wang, Zijie J. and Lee, Seongmin and Roozbahani, Mahdi and Chau, Duen Horng},
   journal={IEEE Transactions on Visualization and Computer Graphics}, 
   title={VISGRADER: Automatic Grading of D3 Visualizations}, 
   year={2023},
-  volume={},
-  number={},
+  volume={30},
+  number={1},
   pages={1-11},
   doi={10.1109/TVCG.2023.3327181}}
 ```
